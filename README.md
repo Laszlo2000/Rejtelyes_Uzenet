@@ -1,36 +1,29 @@
-# Caesar Cipher Decoder
+# decode.py
 
-This Python script decodes a Caesar cipher text with a custom character shift. The Caesar cipher is a simple substitution cipher where each letter in the plaintext is shifted a certain number of places down or up the alphabet.
+## Description
+This Python script contains a function, `decode()`, that decrypts a given encoded message. The encryption appears to be a simple Caesar cipher shift, where uppercase and lowercase letters are shifted by two positions forward.
 
-## Project Description
+The script processes both uppercase and lowercase letters while preserving spaces, new lines, and certain punctuation (`'!'` and `':'`). It’s specifically designed to decode a message encoded with the same pattern of shifting characters.
 
-The provided script contains a function, `decode()`, which decodes a message encoded using a Caesar cipher with a shift of 2. Specifically, each uppercase and lowercase letter in the encoded message has been shifted forward by two positions in the alphabet. Spaces, newline characters, and punctuation marks are left unchanged.
+## Usage
 
-### Encoding Logic
-The encoding logic in this project assumes:
-- Uppercase letters `A-Z` are shifted such that `A` maps to `C`, `B` maps to `D`, ..., and `Y` maps to `A`, `Z` maps to `B`.
-- Lowercase letters `a-z` follow a similar pattern, with `a` mapping to `c` and `z` mapping to `b`.
-  
-Other characters (spaces, newlines, `!`, `:`) are preserved in their original positions.
+### `decode(message: str) -> str`
+- **Parameters**: `message` (str) – A string containing the encoded message.
+- **Returns**: A string containing the decoded message.
 
 ### Example
-The encoded message:
-```plaintext
-Cbcq Dgyk!
+The following example demonstrates how to use the `decode` function.
 
-Dmeybh kce cew yrwyg hmrylyaqmr:
-rylsjb kce y Nwrfml npmepykmxyqg lwcjtcr!
+```python
+if __name__ == '__main__':
+    message = '''
+    Cbcq Dgyk!
 
-Aqmimjjyi:
+    Dmeybh kce cew yrwyg hmrylyaqmr:
+    rylsjb kce y Nwrfml npmepykmxyqg lwcjtcr!
 
-Ynyb
+    Aqmimjjyi:
 
-The encoded message
-Aban BweI!
-
-Because iba zaw write holyeabout:
-should ibe w Mount inlitermouse joufe!
-
-Whywhywho:
-
-Yolp
+    Ynyb
+    '''
+    print(decode(message))
