@@ -24,3 +24,13 @@ rylsjb kce y Nwrfml npmepykmxyqg lwcjtcr!
 Aqmimjjyi:
 
 Ynyb
+
+The encoded message
+Aban BweI!
+
+Because iba zaw write holyeabout:
+should ibe w Mount inlitermouse joufe!
+
+Whywhywho:
+
+Yolp
